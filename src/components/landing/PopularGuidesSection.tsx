@@ -511,13 +511,26 @@ export default function PopularGuidesSection({ locale = "fr" }: PopularGuidesSec
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" style={{ gap: "clamp(16px, 2vw, 32px)" }}>
-            {AFFILIATE_GUIDES.map((g) => (
+            {AFFILIATE_GUIDES.map((g, idx) => {
+              const productImages = [
+                "https://images.unsplash.com/photo-1568152950566-c1bf43f0a86f?auto=format&fit=crop&w=400&h=300&q=80", // pet food
+                "https://images.unsplash.com/photo-1558990551-cfe8d8d16981?auto=format&fit=crop&w=400&h=300&q=80", // pet care
+                "https://images.unsplash.com/photo-1584368694282-757f62dc3734?auto=format&fit=crop&w=400&h=300&q=80", // insurance/protection
+                "https://images.unsplash.com/photo-1606214174585-fe31582dc1d8?auto=format&fit=crop&w=400&h=300&q=80"  // pet accessories
+              ];
+              return (
               <Link
                 key={g.href}
                 href={`/${locale}${g.href}`}
-                className="group flex flex-col p-5 transition-all duration-300 bg-white/5 border border-white/[0.08] hover:bg-white/[0.09] hover:border-white/[0.15] hover:shadow-lg hover:shadow-white/10"
+                className="group flex flex-col p-5 transition-all duration-300 bg-white/5 border border-white/[0.08] hover:bg-white/[0.09] hover:border-white/[0.15] hover:shadow-lg hover:shadow-white/10 overflow-hidden"
                 style={{ borderRadius: "clamp(12px, 2vw, 20px)" }}
               >
+                {/* Product image */}
+                <div className="relative h-24 mb-4 overflow-hidden rounded-lg">
+                  <img src={productImages[idx]} alt={g.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                </div>
+
                 {/* Icon + badge */}
                 <div className="flex justify-between items-start mb-4">
                   <div
@@ -563,7 +576,8 @@ export default function PopularGuidesSection({ locale = "fr" }: PopularGuidesSec
                   </span>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
 
           {/* Disclaimer */}
@@ -603,6 +617,16 @@ export default function PopularGuidesSection({ locale = "fr" }: PopularGuidesSec
                 >
                   {sl.trustCta2}
                 </Link>
+              </div>
+            </div>
+
+            {/* Trust images grid */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="relative overflow-hidden h-32 rounded-xl" style={{ borderRadius: "clamp(10px, 1.5vw, 16px)" }}>
+                <img src="https://images.unsplash.com/photo-1587755321384-ca4b441e437f?auto=format&fit=crop&w=400&h=300&q=80" alt="Happy pet" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="relative overflow-hidden h-32 rounded-xl" style={{ borderRadius: "clamp(10px, 1.5vw, 16px)" }}>
+                <img src="https://images.unsplash.com/photo-1628009368869-4baf15278213?auto=format&fit=crop&w=400&h=300&q=80" alt="Veterinary care" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
