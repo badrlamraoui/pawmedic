@@ -1,0 +1,112 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ─── Enums ────────────────────────────────────────────────────────────────────
+
+enum Plan {
+  FREE
+  PREMIUM
+  FAMILLE
+}
+
+enum Species {
+  DOG
+  CAT
+}
+
+enum Sex {
+  MALE
+  FEMALE
+}
+
+// ─── Models ───────────────────────────────────────────────────────────────────
+
+model User {
+  id                 String    @id @default(cuid())
+  clerkId            String    @unique
+  email              String    @unique
+  plan               Plan      @default(FREE)
+  lsSubscriptionId   String?
+  lsVariantId        String?
+  lsCustomerId       String?
+  lsCurrentPeriodEnd DateTime?
+  createdAt          DateTime  @default(now())
+
+  animals Animal[]
+}
+
+model Animal {
+  id          String    @id @default(cuid())
+  userId      String
+  name        String
+  species     Species
+  breed       String?
+  birthDate   DateTime?
+  sex         Sex?
+  sterilized  Boolean   @default(false)
+  weightKg    Float?
+  color       String?
+  photoUrl    String?
+  vetName     String?
+  microchipId String?
+  createdAt   DateTime  @default(now())
+
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  healthEvents  HealthEvent[]
+  diagnoses     Diagnosis[]
+  prescriptions Prescription[]
+}
+
+model HealthEvent {
+  id              String    @id @default(cuid())
+  animalId        String
+  type            String
+  name            String
+  date            DateTime
+  nextDue         DateTime?
+  vetName         String?
+  notes           String?
+  prescriptionUrl String?
+  reminderSent    Boolean   @default(false)
+  createdAt       DateTime  @default(now())
+
+  animal Animal @relation(fields: [animalId], references: [id], onDelete: Cascade)
+}
+
+model Diagnosis {
+  id           String   @id @default(cuid())
+  animalId     String
+  symptomsText String
+  bodyArea     String?
+  duration     String?
+  photoUrls    String[]
+  resultJson   Json
+  urgencyLevel String
+  archived     Boolean  @default(false)
+  createdAt    DateTime @default(now())
+
+  animal Animal @relation(fields: [animalId], references: [id], onDelete: Cascade)
+}
+
+model Prescription {
+  id            String   @id @default(cuid())
+  animalId      String
+  imageUrl      String
+  extractedJson Json
+  createdAt     DateTime @default(now())
+
+  animal Animal @relation(fields: [animalId], references: [id], onDelete: Cascade)
+}
+
+model WaitlistEmail {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  locale    String   @default("fr")
+  source    String?
+  createdAt DateTime @default(now())
+}

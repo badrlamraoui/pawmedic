@@ -1,0 +1,402 @@
+{
+  "common": {
+    "appName": "Pawmedic",
+    "loading": "Laden...",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "back": "Terug",
+    "next": "Volgende",
+    "skip": "Deze stap overslaan",
+    "error": "Er is een fout opgetreden",
+    "retry": "Opnieuw proberen",
+    "viewDetail": "Details bekijken",
+    "add": "Toevoegen",
+    "edit": "Bewerken",
+    "delete": "Verwijderen",
+    "confirm": "Bevestigen"
+  },
+  "nav": {
+    "home": "Home",
+    "diagnose": "Analyseren",
+    "carnet": "Dossier",
+    "profile": "Profiel",
+    "features": "Functies",
+    "pricing": "Tarieven",
+    "roadmap": "Roadmap",
+    "earlyAccess": "Vroege toegang",
+    "howItWorks": "Hoe het werkt"
+  },
+  "landing": {
+    "badge": "VROEGE TOEGANG",
+    "hero": {
+      "title": "De gezondheid van uw huisdier,",
+      "titleHighlight": "eindelijk duidelijk.",
+      "subtitle": "Instant AI-diagnose. Digitaal gezondheidsdossier. Recepten ontcijferen. Voor honden en katten.",
+      "cta": "Join de wachtlijst",
+      "ctaNote": "Gratis · Geen creditcard · Directe bètatoegang",
+      "stats": {
+        "stat1": "1 op de 3 huisdieren gaat te laat naar de dierenarts",
+        "stat2": "78% van de eigenaren zoekt eerst online",
+        "stat3": "Gemiddeld €150 voor een spoedconsultatie"
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "HOE HET WERKT",
+      "title": "Een resultaat in minder dan 30 seconden",
+      "step1": {
+        "title": "Beschrijf de symptomen",
+        "desc": "Voer in wat u waarneemt..."
+      },
+      "step2": {
+        "title": "De AI analyseert",
+        "desc": "Ons veterinair model analyseert..."
+      },
+      "step3": {
+        "title": "Ontvang duidelijk advies",
+        "desc": "Urgentieniveau, hypotheses, direct advies."
+      }
+    },
+    "features": {
+      "eyebrow": "FUNCTIES",
+      "title": "Alles wat uw huisdier nodig heeft",
+      "diagnosis": {
+        "title": "Instant AI-diagnose",
+        "desc": "..."
+      },
+      "carnet": {
+        "title": "Digitaal gezondheidsdossier",
+        "desc": "..."
+      },
+      "prescriptions": {
+        "title": "Recepten ontcijferen",
+        "desc": "..."
+      },
+      "alerts": {
+        "title": "Meldingen & herinneringen",
+        "desc": "..."
+      },
+      "history": {
+        "title": "Volledige geschiedenis",
+        "desc": "..."
+      },
+      "multi": {
+        "title": "Meerdere huisdieren",
+        "desc": "..."
+      }
+    },
+    "pricing": {
+      "eyebrow": "TARIEVEN",
+      "title": "Eenvoudig en transparant",
+      "betaNote": "Gratis tijdens de gehele bètaperiode.",
+      "indicative": "Indicatieve prijs — gratis in bèta",
+      "free": {
+        "name": "Gratis",
+        "tagline": "Voor altijd",
+        "price": "€0",
+        "period": "/maand",
+        "features": [
+          "1 huisdier",
+          "3 AI-analyses / maand",
+          "Gezondheidsdossier",
+          "Basisherinneringen"
+        ],
+        "cta": "Gratis starten"
+      },
+      "premium": {
+        "name": "Premium",
+        "badge": "AANBEVOLEN",
+        "tagline": "Voor betrokken eigenaren",
+        "price": "€9,90",
+        "period": "/maand",
+        "features": [
+          "Onbeperkt huisdieren",
+          "Onbeperkte analyses",
+          "Recepten ontcijferen",
+          "PDF exporteren",
+          "Geavanceerde herinneringen",
+          "Prioriteitsondersteuning"
+        ],
+        "cta": "Join de bèta"
+      },
+      "famille": {
+        "name": "Familie",
+        "tagline": "Voor gezinnen met meerdere huisdieren",
+        "price": "€14,90",
+        "period": "/maand",
+        "features": [
+          "Alles van Premium",
+          "5 huisdieren",
+          "Delen tussen gezinsleden",
+          "Prioritaire toegang tot functies"
+        ],
+        "cta": "Join de bèta"
+      }
+    },
+    "roadmap": {
+      "eyebrow": "ROADMAP",
+      "title": "Wat er binnenkort aankomt",
+      "m1": {
+        "label": "NU",
+        "features": "AI-diagnose · Gezondheidsdossier · Herinneringen · Recepten"
+      },
+      "m3": {
+        "label": "MAART 2025",
+        "features": "Medicijnendatabase · Voeding · Geavanceerde fotoanalyse"
+      },
+      "m6": {
+        "label": "ZOMER 2025",
+        "features": "Productaanbevelingen · Dierenartsenpartners · Verzekering"
+      }
+    },
+    "cta": {
+      "title": "Uw huisdier verdient meer dan een Google-zoekopdracht.",
+      "subtitle": "Sluit u aan bij de eerste gebruikers en krijg gratis toegang tot de bèta.",
+      "placeholder": "uw@email.nl",
+      "button": "Join de wachtlijst",
+      "success": "Inschrijving bevestigd. We nemen binnenkort contact op.",
+      "alreadyRegistered": "Dit e-mailadres is al ingeschreven."
+    },
+    "footer": {
+      "tagline": "Dierengezondheid, eindelijk toegankelijk.",
+      "legal": "Juridische vermeldingen",
+      "privacy": "Privacybeleid",
+      "cgv": "Algemene verkoopvoorwaarden",
+      "copyright": "© 2025 Pawmedic. Alle rechten voorbehouden."
+    }
+  },
+  "diagnosis": {
+    "title": "Een symptoom analyseren",
+    "subtitle": "Resultaat in minder dan 30 seconden",
+    "step1": {
+      "title": "Getroffen gebied",
+      "label": "Welk deel van het lichaam is aangetast?",
+      "areas": {
+        "head": "Hoofd",
+        "eyes": "Ogen",
+        "ears": "Oren",
+        "nose": "Neus",
+        "mouth": "Mond",
+        "skin": "Huid / Vacht",
+        "paws": "Poten",
+        "abdomen": "Buik",
+        "back": "Rug",
+        "behavior": "Algemeen gedrag",
+        "other": "Overig"
+      }
+    },
+    "step2": {
+      "title": "Beschrijf de symptomen",
+      "placeholder": "Beschrijf wat u waarneemt (minimaal 20 tekens)...",
+      "since": "Hoe lang al?",
+      "intensity": "Intensiteit?",
+      "evolution": "Verloop?",
+      "sinceOptions": ["Vandaag", "2-3 dagen", "1 week", "Meer dan 1 week"],
+      "intensityOptions": ["Licht", "Matig", "Ernstig"],
+      "evolutionOptions": ["Stabiel", "Verbetert", "Verslechtert"]
+    },
+    "step3": {
+      "title": "Foto's",
+      "subtitle": "Optioneel — tot 3 foto's voor een nauwkeurigere analyse",
+      "dropzone": "Sleep uw foto's hierheen of klik om te selecteren",
+      "maxPhotos": "Maximaal 3 foto's"
+    },
+    "analyzing": "Analyse bezig...",
+    "analyzeButton": "Nu analyseren",
+    "stepIndicator": "Stap {step} van 3",
+    "result": {
+      "urgency": {
+        "CRITICAL": "Dringende consultatie",
+        "WITHIN_48H": "Binnen 48 uur raadplegen",
+        "LOW": "Niet urgent",
+        "WATCH": "In de gaten houden"
+      },
+      "hypotheses": "Hypotheses",
+      "advice": "Nu doen",
+      "watchFor": "Raadpleeg een dierenarts als...",
+      "save": "Opslaan in dossier",
+      "newDiagnosis": "Nieuwe analyse"
+    },
+    "limitReached": "U heeft uw limiet van 3 analyses deze maand bereikt."
+  },
+  "animals": {
+    "title": "Mijn huisdieren",
+    "addFirst": "Mijn eerste huisdier toevoegen",
+    "addNew": "Een huisdier toevoegen",
+    "noAnimals": "Nog geen huisdieren",
+    "noAnimalsSubtitle": "Voeg uw eerste huisdier toe om te beginnen",
+    "species": {
+      "DOG": "Hond",
+      "CAT": "Kat"
+    },
+    "sex": {
+      "MALE": "Mannelijk",
+      "FEMALE": "Vrouwelijk"
+    },
+    "sterilized": "Gesteriliseerd",
+    "fields": {
+      "name": "Naam van het huisdier",
+      "species": "Soort",
+      "breed": "Ras",
+      "birthDate": "Geboortedatum",
+      "weight": "Gewicht (kg)",
+      "sex": "Geslacht",
+      "sterilized": "Gesteriliseerd",
+      "color": "Kleur / Vacht",
+      "microchip": "Chipnummer",
+      "vet": "Naam van de dierenarts"
+    },
+    "health": {
+      "good": "Alles goed",
+      "alerts": "{count} melding(en)"
+    },
+    "age": {
+      "years": "{count} jaar",
+      "months": "{count} maand(en)",
+      "weeks": "{count} week/weken"
+    }
+  },
+  "carnet": {
+    "title": "Gezondheidsdossier",
+    "tabs": {
+      "vaccines": "Vaccins & herinneringen",
+      "treatments": "Behandelingen",
+      "visits": "Consultaties",
+      "analyses": "AI-analyses"
+    },
+    "status": {
+      "upToDate": "Bijgewerkt",
+      "due": "Te vernieuwen",
+      "overdue": "Achterstallig"
+    },
+    "export": "PDF exporteren",
+    "share": "Delen met mijn dierenarts",
+    "addEvent": "Een item toevoegen",
+    "noEvents": "Geen gebeurtenissen geregistreerd",
+    "eventTypes": {
+      "VACCINE": "Vaccin",
+      "TREATMENT": "Behandeling",
+      "VET_VISIT": "Consultatie",
+      "DEWORMING": "Ontworming",
+      "ANTIPARASITIC": "Antiparasitair",
+      "OTHER": "Overig"
+    },
+    "nextDue": "Volgende herinnering",
+    "lastDate": "Laatste keer"
+  },
+  "profile": {
+    "title": "Mijn profiel",
+    "plan": "Mijn abonnement",
+    "planFree": "Gratis",
+    "planPremium": "Premium",
+    "planFamille": "Familie",
+    "upgrade": "Upgraden naar Premium",
+    "signOut": "Uitloggen",
+    "language": "Taal",
+    "notifications": "Meldingen"
+  },
+  "home": {
+    "greeting": "Hallo",
+    "subtitle": "Hoe gaat het met",
+    "analyzeButton": "Een symptoom analyseren",
+    "analyzeSubtitle": "Resultaat in minder dan 30 seconden",
+    "pending": "Te doen",
+    "lastAnalysis": "Laatste analyse",
+    "noLastAnalysis": "Geen recente analyse",
+    "overdue": "Achterstallig",
+    "daysLeft": "D+{days}"
+  },
+  "alerts": {
+    "title": "Meldingen & herinneringen",
+    "noAlerts": "Nog geen herinneringen",
+    "noAlertsSubtitle": "Uw vaccin- en behandelingsherinneringen verschijnen hier"
+  },
+  "onboarding": {
+    "title": "Laten we uw eerste huisdier toevoegen",
+    "subtitle": "Vul de basisinformatie in.",
+    "submit": "Profiel aanmaken",
+    "skip": "Nu overslaan"
+  },
+  "errors": {
+    "animalNotFound": "Huisdier niet gevonden",
+    "unauthorized": "Toegang niet toegestaan",
+    "generic": "Er is een fout opgetreden.",
+    "limitReached": "Limiet bereikt"
+  },
+  "legal": {
+    "mentions": "Juridische vermeldingen",
+    "privacy": "Privacybeleid",
+    "cgv": "Algemene verkoopvoorwaarden",
+    "cookies": "Cookiebeheer"
+  },
+  "site": {
+    "breadcrumb": { "home": "Home" },
+    "medications": {
+      "dbTitle": "Database diergeneesmiddelen",
+      "verified": "Medisch geverifieerd",
+      "disclaimer": "Alleen voor informatieve doeleinden. Deze informatie vervangt geen dierenartsgadvies. Neem bij noodgevallen contact op met uw dierenarts.",
+      "filterBySpecies": "Filteren op diersoort",
+      "medsForSpecies": "Medicijnen voor",
+      "breadcrumb": "Medicijnen",
+      "prescription": "Recept",
+      "otc": "Zonder recept",
+      "indications": "Indicaties",
+      "posology": "Dosering per diersoort",
+      "dose": "Dosis",
+      "frequency": "Frequentie",
+      "route": "Toedieningsweg",
+      "sideEffects": "Bijwerkingen",
+      "contraindications": "Contra-indicaties",
+      "interactions": "Geneesmiddelinteracties",
+      "storage": "Bewaring",
+      "relatedArticles": "Gerelateerde artikelen",
+      "relatedMeds": "Vergelijkbare medicijnen",
+      "emergency": "Veterinaire noodsituatie",
+      "vetNote": "Noot van de dierenarts",
+      "species": "Diersoort",
+      "keyInfo": "Sleutelinformatie",
+      "activeIngredient": "Werkzame stof",
+      "therapeuticClass": "Therapeutische klasse",
+      "prescriptionRequired": "Recept vereist",
+      "otcSale": "Vrij verkrijgbaar",
+      "speciesConcerned": "Betrokken diersoorten",
+      "lastUpdated": "Laatst bijgewerkt",
+      "viewAll": "Alle medicijnen weergeven"
+    },
+    "breeds": {
+      "title": "Rassen van",
+      "breadcrumb": "Rassen",
+      "allBreeds": "Alle rassen van",
+      "documented": "gedocumenteerde rassen",
+      "size": "Formaat",
+      "weightMale": "Gewicht reu/kater",
+      "height": "Hoogte",
+      "lifespan": "Levensverwachting",
+      "careLevel": "Verzorgingsniveau",
+      "diseases": "Predisponerende aandoeningen",
+      "temperament": "Karakter & temperament",
+      "description": "Beschrijving",
+      "technicalSheet": "Technisch profiel",
+      "exercise": "Bewegingsbehoefte",
+      "grooming": "Vachtverzorging",
+      "apartment": "Appartementleven",
+      "children": "Met kinderen",
+      "otherPets": "Met andere dieren",
+      "yes": "Ja",
+      "no": "Nee",
+      "similar": "Vergelijkbare rassen",
+      "viewAll": "Alle rassen bekijken",
+      "validatedBy": "Gevalideerd door",
+      "origin": "Herkomst",
+      "prevention": "Preventie",
+      "dog": "hond",
+      "cat": "kat"
+    },
+    "rodents": {
+      "title": "Knaagdieren",
+      "guides": "Gidsen & advies",
+      "others": "Andere knaagdieren",
+      "noArticles": "Nog geen specifieke gids beschikbaar.",
+      "seeAll": "Alle knaagdiergidsen bekijken"
+    }
+  }
+}
